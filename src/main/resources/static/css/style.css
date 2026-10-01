@@ -1,0 +1,31 @@
+BigText {
+    font-size:larger;
+    font-weight:bold;
+    padding: 15px 15px 15px 15px;
+    width: 300px;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+form {
+    border: 2px solid black;
+    padding: 15px 50px 15px 50px;
+    width: 50%;
+    margin: 20px;
+}
+
+body {
+    background-color: beige;
+    border: 1px dotted magenta;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+
+}
