@@ -53,7 +53,7 @@ async function SearchFunc10() {
                 document.getElementById("VarCHum").textContent = "Finding Best Match";            
 
                 const Input = document.getElementById('js-input2').value.trim();
-                document.getElementById("VarCName").textContent = "Searching for" + Input;
+                document.getElementById("VarCName").textContent = "Searching for " + Input;
                 const city = await PrevSearchCheck(Input);
 
                 if(!city) {
