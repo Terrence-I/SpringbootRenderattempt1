@@ -7,6 +7,7 @@
 
         <title>Terrence Ishak Weather Finder Assignment </title>
         <link rel="stylesheet" href="/css/style.css">
+        <script src="app.js"></script>
     </head>
 <!--set up body text-->
 <body>
@@ -17,20 +18,26 @@
         </nav>
         
         <!--temporary, just need a place to seach for stuff-->
-        <form action="/submit">
-            Enter a City Here: <input name="CSearch" type = "Text" >
-            <input type = "submit" value = "Search">
+        <inputfield>
+            <label for="js-input">Search for Location:</label>
+            <input type="text" id="js-input" placeholder="Type Here">
+            <input type="submit" onclick="SearchFunc()">
+            
+        </inputfield>
+                   
+        
 
 
-        </form>
+        </div>
+
         <!-- output area-->
         <table>
-            <tr> <th>City Name:</th> <td> "namevariableherefromscriptdothislater"</td> </tr>
-            <tr> <th>Temperature:</th> <td> "tempvariableherefromscriptdothislater"</td> </tr>
-            <tr> <th>Wind Speed:</th> <td> "windvariableherefromscriptdothislater"</td> </tr>
-            <tr> <th>Humidity:</th> <td> "Humidityvariableherefromscriptdothislater"</td> </tr>
+            <tr> <th>City Name:</th> <td id="VarCName"> "Clear"</td> </tr>
+            <tr> <th>Temperature:</th> <td id="VarCTemp"> "Clear"</td> </tr>
+            <tr> <th>Wind Speed:</th> <td id="VarCWind"> "Clear"</td> </tr>
+            <tr> <th>Humidity:</th> <td id="VarCHum"> "Clear"</td> </tr>
         </table>
-
+        
 
     </header>
  <!--prechosen stuff-->
@@ -40,7 +47,7 @@
             <option value="city2">City2</option>
             <option value="city3">City3</option>
             <option value="city4">City4</option>
-            <!--ect, maybe changed later idk just looking at options-->
+            <!--ect, maybe changed later idk just looking at-->
         </select>
     </body>
 
