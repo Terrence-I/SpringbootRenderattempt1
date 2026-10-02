@@ -46,23 +46,38 @@ async function PrevSearchCheck(Input) {
 
 }
 
-<<<<<<< HEAD
 async function SearchFunc10() {
                 
-=======
-async function SearchFunc() {
-                document.getElementById("VarCName").textContent = "Finding Best Match";
->>>>>>> main
                 document.getElementById("VarCTemp").textContent = "Finding Best Match";
                 document.getElementById("VarCWind").textContent = "Finding Best Match";
                 document.getElementById("VarCHum").textContent = "Finding Best Match";            
 
-<<<<<<< HEAD
                 const Input = document.getElementById('js-input2').value.trim();
                 document.getElementById("VarCName").textContent = "Searching for " + Input;
-=======
+                const city = await PrevSearchCheck(Input);
+
+                if(!city) {
+                    document.getElementById("VarCName").textContent = "City not Found";
+                    document.getElementById("VarCTemp").textContent = "Unknown C^o";
+                    document.getElementById("VarCWind").textContent = "Unknown km/h";
+                    document.getElementById("VarCHum").textContent = "Unknown %";
+                    return;
+                }
+                
+                document.getElementById("VarCName").textContent = city.name;
+                document.getElementById("VarCTemp").textContent = city.temp + "C^o";
+                document.getElementById("VarCWind").textContent = city.wind + "km/h";
+                document.getElementById("VarCHum").textContent = city.hum + "%";
+                
+} 
+async function SearchFunc() {
+                
+                document.getElementById("VarCTemp").textContent = "Finding Best Match";
+                document.getElementById("VarCWind").textContent = "Finding Best Match";
+                document.getElementById("VarCHum").textContent = "Finding Best Match";            
+
                 const Input = document.getElementById('js-input').value.trim();
->>>>>>> main
+                document.getElementById("VarCName").textContent = "Searching for " + Input;
                 const city = await PrevSearchCheck(Input);
 
                 if(!city) {

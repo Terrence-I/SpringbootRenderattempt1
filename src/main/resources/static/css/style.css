@@ -9,7 +9,7 @@ BigText {
 table, th, td {
     border: 2px solid black;
     width: 300px;
-    padding: 50px;
+    padding: 15px;
     margin: 20px;
 
 }
@@ -23,7 +23,6 @@ form {
 
 body {
     background-color: beige;
-    border: 1px dotted magenta;
     width: 300px;
     padding: 50px;
     margin: 20px;

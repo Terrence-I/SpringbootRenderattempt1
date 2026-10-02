@@ -21,12 +21,30 @@
         <!--temporary, just need a place to seach for stuff-->
         <inputfield>
             <label for="js-input">Search for Location:</label>
-            <input type="text" id="js-input" placeholder="Type Here">
-            <input type="submit" onclick="SearchFunc()">
+            <input type="text" id="js-input" placeholder="Type Here"> <br>
+            <input type="submit" onclick="SearchFunc()"> <br>
             
         </inputfield>
-                   
-        
+                    
+            <!--prechosen stuff-->
+        <body>
+            <br>
+            <label for="js-input2">Pre Selected Top 10 Cities</label>
+            <select id="js-input2">
+                <option value="Vancouver">Vancouver</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Montreal">Montreal</option>
+                <option value="Calgary">Calgary</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Edmonton">Edmonton</option>
+                <option value="Winnipeg">Winnipeg</option>
+                <option value="Mississauga">Mississauga</option>
+                <option value="Brampton">Brampton</option>
+                <option value="Hamilton">Hamilton</option>
+                <!--ect, maybe changed later idk just looking at-->
+            </select> <br>
+            <input type="submit" onclick="SearchFunc10()">
+        </body>
 
 
         </div>
@@ -37,37 +55,7 @@
             <tr> <th>Temperature:</th> <td id="VarCTemp"> "Clear"</td> </tr>
             <tr> <th>Wind Speed:</th> <td id="VarCWind"> "Clear"</td> </tr>
             <tr> <th>Humidity:</th> <td id="VarCHum"> "Clear"</td> </tr>
-            <tr> <th>City Name:</th> <td id="VarCName"> "Clear"</td> </tr>
-            <tr> <th>Temperature:</th> <td id="VarCTemp"> "Clear"</td> </tr>
-            <tr> <th>Wind Speed:</th> <td id="VarCWind"> "Clear"</td> </tr>
-            <tr> <th>Humidity:</th> <td id="VarCHum"> "Clear"</td> </tr>
         </table>
-        
-        
-
     </header>
- <!--prechosen stuff-->
-    <body>
-        <label for="js-input2">Top 10 Cities</label>
-        <select id="js-input2">
-            <option value="Vancouver">Vancouver</option>
-            <option value="Toronto">Toronto</option>
-            <option value="Montreal">Montreal</option>
-            <option value="Calgary">Calgary</option>
-            <option value="Ottawa">Ottawa</option>
-            <option value="Edmonton">Edmonton</option>
-            <option value="Winnipeg">Winnipeg</option>
-            <option value="Mississauga">Mississauga</option>
-            <option value="Brampton">Brampton</option>
-            <option value="Hamilton">Hamilton</option>
-            <option value="Surrey">Surrey</option>
-            <!--ect, maybe changed later idk just looking at-->
-        </select>
-        <input type="submit" onclick="SearchFunc10()">
-    </body>
-
-
-
 </body>
-
 </html>
