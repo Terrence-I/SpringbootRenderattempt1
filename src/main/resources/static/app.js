@@ -46,13 +46,23 @@ async function PrevSearchCheck(Input) {
 
 }
 
+<<<<<<< HEAD
+async function SearchFunc10() {
+                
+=======
 async function SearchFunc() {
                 document.getElementById("VarCName").textContent = "Finding Best Match";
+>>>>>>> main
                 document.getElementById("VarCTemp").textContent = "Finding Best Match";
                 document.getElementById("VarCWind").textContent = "Finding Best Match";
                 document.getElementById("VarCHum").textContent = "Finding Best Match";            
 
+<<<<<<< HEAD
+                const Input = document.getElementById('js-input2').value.trim();
+                document.getElementById("VarCName").textContent = "Searching for " + Input;
+=======
                 const Input = document.getElementById('js-input').value.trim();
+>>>>>>> main
                 const city = await PrevSearchCheck(Input);
 
                 if(!city) {
